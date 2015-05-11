@@ -94,10 +94,10 @@
   "sources": {
     "mapion": {
       "type": "vector",
-      "url": "source.json"
+      "url": "/styles/source.json"
     }
   },
-  "sprite": "bright",
+  "sprite": "/styles/bright",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
