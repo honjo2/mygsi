@@ -18,6 +18,7 @@
     "@itabashi": "#334",
     "@nerima": "#74aee9",
     "@suginami": "#666",
+    "@text_halo": "rgba(255,255,255,0.8)",
     "@poi_text_halo": "#ffffff",
     "@maki": "#666",
     "@point_translate": [0, -30],
@@ -203,5 +204,32 @@
     "paint": {
       "fill-color": "@toshima"
     }
+
+  }, {
+    "id": "shinjuku-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "新宿区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+
+
   }]
 }
