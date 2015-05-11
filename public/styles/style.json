@@ -6,30 +6,18 @@
     "@sans_it": "Open Sans Italic, Arial Unicode MS Regular",
     "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
-    "@land": "#f8f4f0",
-    "@water": "#a0c8f0",
-    "@platform": "#dc7878",
-    "@school": "#f0e8f8",
-    "@building": "#f2eae2",
-    "@building_shadow": "#dfdbd7",
-    "@building_color_transition": {
-      "base": 1,
-      "stops": [[15.5, "#f2eae2"], [16, "#dfdbd7"]]
-    },
-    "@building_opacity": {
-      "base": 1,
-      "stops": [[15, 0], [16, 1]]
-    },
-    "@motorway": "#fc8",
-    "@motorway_casing": "#e9ac77",
-    "@street": "#fff",
-    "@street_casing": "#cfcdca",
-    "@rail": "#bbb",
-    "@text": "#334",
-    "@text_halo": "rgba(255,255,255,0.8)",
-    "@marine_text": "#74aee9",
-    "@marine_text_halo": "rgba(255,255,255,0.7)",
-    "@poi_text": "#666",
+    "@background": "#f8f4f0",
+    "@bunkyo": "#a0c8f0",
+    "@shinjuku": "#dc7878",
+    "@toshima": "#f0e8f8",
+    "@shibuya": "#f2eae2",
+    "@chiyoda": "#dfdbd7",
+    "@minato": "#e9ac77",
+    "@nakano": "#cfcdca",
+    "@kita": "#bbb",
+    "@itabashi": "#334",
+    "@nerima": "#74aee9",
+    "@suginami": "#666",
     "@poi_text_halo": "#ffffff",
     "@maki": "#666",
     "@point_translate": [0, -30],
@@ -103,368 +91,117 @@
     "id": "background",
     "type": "background",
     "paint": {
-      "background-color": "@land"
+      "background-color": "@background"
     }
 
   }, {
-    "id": "railway_platform",
+    "id": "chiyoda",
     "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "railway", "platform"],
+    "filter": ["==", "n03_003", "千代田区"],
     "paint": {
-      "fill-color": "@platform"
+      "fill-color": "@chiyoda"
     }
 
   }, {
-    "id": "landuse_school",
+    "id": "minato",
     "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "boundary", "administrative"],
+    "filter": ["==", "n03_003", "港区"],
     "paint": {
-      "fill-color": "@school"
-    }
-  }, {
-    "id": "waterway_river",
-    "type": "line",
-    "source": "mapion",
-    "source-layer": "line",
-    "filter": ["==", "waterway", "river"],
-    "layout": {
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "@water",
-      "line-width": {
-        "base": 1.2,
-        "stops": [[11, 0.5], [20, 6]]
-      }
+      "fill-color": "@minato"
     }
 
-
   }, {
-    "id": "water",
+    "id": "shibuya",
     "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "natural", "water"],
+    "filter": ["==", "n03_003", "渋谷区"],
     "paint": {
-      "fill-color": "@water"
+      "fill-color": "@shibuya"
     }
+
   }, {
-    "id": "water_offset",
+    "id": "bunkyo",
     "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "natural", "water"],
+    "filter": ["==", "n03_003", "文京区"],
     "paint": {
-      "fill-color": "white",
-      "fill-opacity": 0.3,
-      "fill-translate": [0, 2.5]
+      "fill-color": "@bunkyo"
     }
+
   }, {
-    "id": "water_pattern",
-    "ref": "water",
-    "paint": {
-      "fill-image": "wave",
-      "fill-translate": [0, 2.5]
-    }
-  }, {
-    "id": "water_label",
-    "type": "symbol",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "natural", "water"],
-    "layout": {
-      "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 13,
-      "text-anchor": "center"
-    },
-    "paint": {
-      "text-color": "#765",
-      "text-halo-color": "#fff",
-      "text-halo-width": 1,
-      "text-halo-blur": 0.5,
-      "text-size": {
-        "stops": [[13, 12], [14, 13]]
-      }
-    }
-  }, {
-    "id": "building",
+    "id": "shinjuku",
     "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "building", "yes"],
+    "filter": ["==", "n03_003", "新宿区"],
     "paint": {
-      "fill-color": "@building_color_transition"
+      "fill-color": "@shinjuku"
     }
+
   }, {
-    "id": "building_top",
-    "ref": "building",
-    "paint": {
-      "fill-color": "@building",
-      "fill-opacity": "@building_opacity",
-      "fill-translate": {
-        "stops": [[15, [0, 0]], [16, [-2, -2]]],
-        "base": 1
-      },
-      "fill-outline-color": "@building_shadow"
-    }
-  }, {
-    "id": "building_label",
-    "type": "symbol",
+    "id": "nakano",
+    "type": "fill",
     "source": "mapion",
     "source-layer": "polygon",
-    "filter": ["==", "building", "yes"],
-    "layout": {
-      "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 13,
-      "text-anchor": "center"
-    },
+    "filter": ["==", "n03_003", "中野区"],
     "paint": {
-      "text-color": "#765",
-      "text-halo-color": "#fff",
-      "text-halo-width": 1,
-      "text-halo-blur": 0.5,
-      "text-size": {
-        "stops": [[13, 12], [14, 13]]
-      }
+      "fill-color": "@nakano"
     }
+
   }, {
-    "id": "line_highway_residential_casing",
-    "type": "line",
+    "id": "kita",
+    "type": "fill",
     "source": "mapion",
-    "source-layer": "line",
-    "minzoom": 5,
-    "filter": ["in", "highway", "residential", "living_street", "tertiary", "unclassified"],
-    "layout": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "北区"],
     "paint": {
-      "line-color": "@street_casing",
-      "line-width": "@street_casing_width"
+      "fill-color": "@kita"
     }
+
   }, {
-    "id": "line_highway_residential",
-    "ref": "line_highway_residential_casing",
-    "paint": {
-      "line-color": "@street",
-      "line-width": "@street_width"
-    }
-
-
-
- }, {
-    "id": "route_road_casing",
-    "type": "line",
+    "id": "itabashi",
+    "type": "fill",
     "source": "mapion",
-    "source-layer": "line",
-    "minzoom": 5,
-    "filter": ["all", ["==", "highway", "secondary"]],
-    "layout": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "板橋区"],
     "paint": {
-      "line-color": "@motorway_casing",
-      "line-width": "@motorway_casing_width"
-    }
-  }, {
-    "id": "route_road",
-    "ref": "route_road_casing",
-    "paint": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_width"
-    }
-  }, {
-    "id": "route_road_label",
-    "type": "symbol",
-    "source": "mapion",
-    "source-layer": "line",
-    "filter": ["==", "highway", "secondary"],
-    "layout": {
-      "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 13,
-      "symbol-placement": "line"
-    },
-    "paint": {
-      "text-color": "#765",
-      "text-halo-color": "#fff",
-      "text-halo-width": 1,
-      "text-halo-blur": 0.5,
-      "text-size": {
-        "stops": [[13, 12], [14, 13]]
-      }
-    }
-
-
-  }, {
-    "id": "road_motorway_casing",
-    "type": "line",
-    "source": "mapion",
-    "source-layer": "line",
-    "minzoom": 5,
-    "filter": ["all", ["==", "highway", "motorway"]],
-    "layout": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "paint": {
-      "line-color": "@motorway_casing",
-      "line-width": "@motorway_casing_width"
-    }
-  }, {
-    "id": "road_motorway",
-    "ref": "road_motorway_casing",
-    "paint": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_width"
-    }
-  }, {
-    "id": "road_label_highway_shields",
-    "type": "symbol",
-    "source": "mapion",
-    "source-layer": "line",
-    "filter": ["all", ["==", "highway", "motorway"], ["in", "reflen", 1, 2, 3, 4, 5, 6]],
-    "layout": {
-      "symbol-placement": "line",
-      "symbol-min-distance": 500,
-      "icon-image": "motorway_{reflen}",
-      "icon-max-size": 1,
-      "text-field": "{ref}",
-      "text-font": "@sans_bd",
-      "text-max-size": 11,
-      "text-rotation-alignment": "viewport",
-      "icon-rotation-alignment": "viewport"
-    },
-    "paint": {
-      "text-color": "#765",
-      "text-size": 11
-    }
-  }, {
-    "id": "road_label",
-    "type": "symbol",
-    "source": "mapion",
-    "source-layer": "line",
-    "filter": ["==", "highway", "motorway"],
-    "layout": {
-      "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 13,
-      "symbol-placement": "line"
-    },
-    "paint": {
-      "text-color": "#765",
-      "text-halo-color": "#fff",
-      "text-halo-width": 1,
-      "text-halo-blur": 0.5,
-      "text-size": {
-        "stops": [[13, 12], [14, 13]]
-      }
-    }
-
-
-  }, {
-    "id": "line_railway",
-    "type": "line",
-    "source": "mapion",
-    "source-layer": "line",
-    "minzoom": 5,
-    "filter": ["==", "route", "railway"],
-    "layout": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "paint": {
-      "line-color": "@rail",
-      "line-width": "@rail_width"
-    }
-  }, {
-    "id": "line_railway_hatching",
-    "ref": "line_railway",
-    "paint": {
-      "line-color": "@rail",
-      "line-dasharray": "@rail_hatch_line_dasharray",
-      "line-width": "@rail_hatch_width"
+      "fill-color": "@itabashi"
     }
 
   }, {
-    "id": "line_rail",
-    "type": "line",
+    "id": "nerima",
+    "type": "fill",
     "source": "mapion",
-    "source-layer": "line",
-    "minzoom": 5,
-    "filter": ["==", "railway", "rail"],
-    "layout": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "練馬区"],
     "paint": {
-      "line-color": "@rail",
-      "line-width": "@rail_width"
-    }
-  }, {
-    "id": "line_rail_hatching",
-    "ref": "line_rail",
-    "paint": {
-      "line-color": "@rail",
-      "line-dasharray": "@rail_hatch_line_dasharray",
-      "line-width": "@rail_hatch_width"
+      "fill-color": "@nerima"
     }
 
-
-
   }, {
-    "id": "place_label_other",
-    "type": "symbol",
+    "id": "suginami",
+    "type": "fill",
     "source": "mapion",
-    "source-layer": "point",
-    "filter": ["in", "amenity", "hamlet", "cafe", "neighbourhood", "post_office"],
-    "layout": {
-      "text-font": "@sans_bd",
-      "text-transform": "uppercase",
-      "text-letter-spacing": 0.1,
-      "text-field": "{name}",
-      "text-max-size": 14,
-      "text-max-width": 9
-    },
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "杉並区"],
     "paint": {
-      "text-color": "#633",
-      "text-halo-color": "@text_halo",
-      "text-halo-width": 1.2,
-      "text-size": {
-        "base": 1.2,
-        "stops": [[12, 10], [15, 14]]
-      }
+      "fill-color": "@suginami"
     }
+
   }, {
-    "id": "poi_label_1",
-    "type": "symbol",
+    "id": "toshima",
+    "type": "fill",
     "source": "mapion",
-    "source-layer": "point",
-    "minzoom": 13,
-    "filter": ["all", ["==", "$type", "Point"]],
-    "layout": {
-      "icon-image": "{amenity}-12",
-      "text-font": "@sans_md",
-      "text-field": "{name}",
-      "text-max-size": 12,
-      "text-max-width": 9,
-      "text-padding": 2,
-      "text-offset": [0, 0.6],
-      "text-anchor": "top"
-    },
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "豊島区"],
     "paint": {
-      "text-color": "@poi_text",
-      "text-size": 12,
-      "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1,
-      "text-halo-blur": 0.5
+      "fill-color": "@toshima"
     }
   }]
 }
