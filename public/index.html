@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapbox GL JS debug page</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.7.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+
+<body>
+<div id='map'></div>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.7.0/mapbox-gl.js'></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    // center: [35.697455,139.696655], // 15/29099/12901
+    center: [35.7,139.7],
+    // center: [35.647253,139.747467], // 17/116416/51628 田町駅
+    // center: [35.653948,139.755706], // 17/116419/51625 浜松町駅
+    zoom: 12,
+    style: 'styles/style.json',
+    hash: true
+});
+// console.log(map);
+
+map.addControl(new mapboxgl.Navigation());
+</script>
+</body>
+</html>
