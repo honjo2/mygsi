@@ -320,6 +320,78 @@
 
 
   }, {
+    "id": "chiyoda-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "千代田区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+  }, {
+    "id": "chuo-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "中央区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+  }, {
+    "id": "minato-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "港区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
     "id": "shinjuku-ku",
     "type": "symbol",
     "source": "mapion",
@@ -343,6 +415,461 @@
       }
     }
 
+    }, {
+    "id": "bunkyo-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "文京区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "taito-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "台東区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "sumida-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "墨田区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "koto-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "江東区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "shinagawa-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "品川区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "meguro-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "目黒区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "ota-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "大田区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "setagaya-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "世田谷区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "shibuya-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "渋谷区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "nakano-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "中野区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "suginami-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "杉並区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "toshima-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "豊島区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "kita-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "北区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "arakawa-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "荒川区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "itabashi-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "板橋区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "nerima-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "練馬区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "adachi-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "足立区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "katsushika-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "葛飾区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
+
+    }, {
+    "id": "edogawa-ku",
+    "type": "symbol",
+    "source": "mapion",
+    "source-layer": "point",
+    "filter": ["==", "name", "江戸川区"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
+      }
+    }
 
 
   }]

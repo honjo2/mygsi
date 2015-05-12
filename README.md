@@ -1,6 +1,14 @@
-### heroku
-- `git@heroku.com:mapboxpbf.git`
-- http://mapboxpbf.herokuapp.com/pbf/17/116399/51604.pbf
+### ローカルで動かす
+- `git clone https://github.com/honjo2/mygsi.git`
+- `cd mygsi`
+- `vi public/styles/source.json`
+  > \- "https://mygsi.herokuapp.com/pbf/{z}/{x}/{y}.pbf"  
+  > \+ "http://localhost:9292/pbf/{z}/{x}/{y}.pbf"
+- `rackup`
+- `open http://localhost:9292`
 
-### pbftestで作ったpbfをコピるコマンド
-- `cp ~/workspace/eclipse3/pbftest/mapbox.pbf ~/workspace/heroku/mapboxpbf/public/pbf/15/29099/12901.pbf; cp ~/workspace/eclipse3/pbftest/mapbox.pbf ~/workspace/heroku/mapboxpbf/public/pbf/17/116399/51604.pbf; git add .; git ci -m 'タイル更新'; git push heroku master`
+
+### heroku
+- herokuと連携している
+- git@heroku.com:mapboxpbf.git
+- http://mygsi.herokuapp.com
