@@ -7,17 +7,10 @@
     "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@background": "#f8f4f0",
-    "@bunkyo": "#a0c8f0",
-    "@shinjuku": "#dc7878",
-    "@toshima": "#f0e8f8",
-    "@shibuya": "#f2eae2",
-    "@chiyoda": "#dfdbd7",
-    "@minato": "#e9ac77",
-    "@nakano": "#cfcdca",
-    "@kita": "#bbb",
-    "@itabashi": "#334",
-    "@nerima": "#74aee9",
-    "@suginami": "#666",
+    "@one": "#dc7878",
+    "@two": "#a0c8f0",
+    "@three": "#f0e8f8",
+    "@four": "#cfcdca",
     "@text_halo": "rgba(255,255,255,0.8)",
     "@poi_text_halo": "#ffffff",
     "@maki": "#666",
@@ -102,7 +95,17 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "千代田区"],
     "paint": {
-      "fill-color": "@chiyoda"
+      "fill-color": "@one"
+    }
+
+  }, {
+    "id": "chuo",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "中央区"],
+    "paint": {
+      "fill-color": "@two"
     }
 
   }, {
@@ -112,27 +115,7 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "港区"],
     "paint": {
-      "fill-color": "@minato"
-    }
-
-  }, {
-    "id": "shibuya",
-    "type": "fill",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "n03_003", "渋谷区"],
-    "paint": {
-      "fill-color": "@shibuya"
-    }
-
-  }, {
-    "id": "bunkyo",
-    "type": "fill",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "n03_003", "文京区"],
-    "paint": {
-      "fill-color": "@bunkyo"
+      "fill-color": "@three"
     }
 
   }, {
@@ -142,7 +125,97 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "新宿区"],
     "paint": {
-      "fill-color": "@shinjuku"
+      "fill-color": "@two"
+    }
+
+  }, {
+    "id": "bunkyo",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "文京区"],
+    "paint": {
+      "fill-color": "@three"
+    }
+
+  }, {
+    "id": "taito",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "台東区"],
+    "paint": {
+      "fill-color": "@four"
+    }
+
+  }, {
+    "id": "sumida",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "墨田区"],
+    "paint": {
+      "fill-color": "@one"
+    }
+
+  }, {
+    "id": "koto",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "江東区"],
+    "paint": {
+      "fill-color": "@four"
+    }
+
+  }, {
+    "id": "shinagawa",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "品川区"],
+    "paint": {
+      "fill-color": "@two"
+    }
+
+  }, {
+    "id": "meguro",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "目黒区"],
+    "paint": {
+      "fill-color": "@one"
+    }
+
+  }, {
+    "id": "oota",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "大田区"],
+    "paint": {
+      "fill-color": "@three"
+    }
+
+  }, {
+    "id": "setagaya",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "世田谷区"],
+    "paint": {
+      "fill-color": "@two"
+    }
+
+  }, {
+    "id": "shibuya",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "渋谷区"],
+    "paint": {
+      "fill-color": "@four"
     }
 
   }, {
@@ -152,37 +225,7 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "中野区"],
     "paint": {
-      "fill-color": "@nakano"
-    }
-
-  }, {
-    "id": "kita",
-    "type": "fill",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "n03_003", "北区"],
-    "paint": {
-      "fill-color": "@kita"
-    }
-
-  }, {
-    "id": "itabashi",
-    "type": "fill",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "n03_003", "板橋区"],
-    "paint": {
-      "fill-color": "@itabashi"
-    }
-
-  }, {
-    "id": "nerima",
-    "type": "fill",
-    "source": "mapion",
-    "source-layer": "polygon",
-    "filter": ["==", "n03_003", "練馬区"],
-    "paint": {
-      "fill-color": "@nerima"
+      "fill-color": "@three"
     }
 
   }, {
@@ -192,7 +235,7 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "杉並区"],
     "paint": {
-      "fill-color": "@suginami"
+      "fill-color": "@one"
     }
 
   }, {
@@ -202,8 +245,79 @@
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "豊島区"],
     "paint": {
-      "fill-color": "@toshima"
+      "fill-color": "@four"
     }
+
+  }, {
+    "id": "kita",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "北区"],
+    "paint": {
+      "fill-color": "@one"
+    }
+
+  }, {
+    "id": "arakawa",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "荒川区"],
+    "paint": {
+      "fill-color": "@two"
+    }
+
+  }, {
+    "id": "itabashi",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "板橋区"],
+    "paint": {
+      "fill-color": "@three"
+    }
+
+  }, {
+    "id": "nerima",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "練馬区"],
+    "paint": {
+      "fill-color": "@two"
+    }
+
+  }, {
+    "id": "adachi",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "足立区"],
+    "paint": {
+      "fill-color": "@four"
+    }
+
+  }, {
+    "id": "katsushika",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "葛飾区"],
+    "paint": {
+      "fill-color": "@three"
+    }
+
+  }, {
+    "id": "edogawa",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_003", "江戸川区"],
+    "paint": {
+      "fill-color": "@two"
+    }
+
 
   }, {
     "id": "shinjuku-ku",
