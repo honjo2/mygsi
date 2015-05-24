@@ -10,7 +10,8 @@
     "@one": "#dc7878",
     "@two": "#a0c8f0",
     "@three": "#f0e8f8",
-    "@four": "#cfcdca",
+    "@four": "#e0e4dd",
+    "@five": "#cfcdca",
     "@text_halo": "rgba(255,255,255,0.8)",
     "@poi_text_halo": "#ffffff",
     "@maki": "#666",
@@ -316,6 +317,16 @@
     "filter": ["==", "n03_003", "江戸川区"],
     "paint": {
       "fill-color": "@two"
+    }
+
+  }, {
+    "id": "syozokumiteichi",
+    "type": "fill",
+    "source": "mapion",
+    "source-layer": "polygon",
+    "filter": ["==", "n03_004", "所属未定地"],
+    "paint": {
+      "fill-color": "@five"
     }
 
 
