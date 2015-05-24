@@ -20,11 +20,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeR
 
 var map = new mapboxgl.Map({
     container: 'map',
-    // center: [35.697455,139.696655], // 15/29099/12901
-    center: [35.7,139.7],
-    // center: [35.647253,139.747467], // 17/116416/51628 田町駅
-    // center: [35.653948,139.755706], // 17/116419/51625 浜松町駅
+    center: [35.7, 139.7],
     zoom: 12,
+    minZoom: 11.6,
+    maxZoom: 14,
     style: '/styles/style.json',
     hash: true
 });
