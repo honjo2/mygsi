@@ -352,7 +352,7 @@
     "source": "gsi",
     "source-layer": "line",
     "minzoom": 11,
-    "maxzoom": 14,
+    "maxzoom": 22,
     "interactive": true,
     "filter": ["in", "$type", "LineString"],
     "layout": {
