@@ -14,16 +14,16 @@
     "description":"",
     "filesize":0,
     "format":"pbf",
-    "id":"Mapion",
+    "id":"GSI",
     "maskLevel":8,
     "maxzoom":17,
     "minzoom":0,
-    "name":"Mapion",
+    "name":"GSI",
     "private":true,
     "scheme":"xyz",
     "tilejson":"2.0.0",
     "tiles":[
-        "http://localhost:9292/pbf/{z}/{x}/{y}.pbf"
+        "https://mygsi.herokuapp.com/pbf/{z}/{x}/{y}.pbf"
     ],
     "vector_layers":[
         {

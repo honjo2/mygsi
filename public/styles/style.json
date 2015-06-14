@@ -88,7 +88,7 @@
     }
   },
   "sources": {
-    "mapion": {
+    "gsi": {
       "type": "vector",
       "url": "/styles/source.json"
     }
@@ -105,7 +105,7 @@
   }, {
     "id": "chiyoda",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "千代田区"],
     "paint": {
@@ -115,7 +115,7 @@
   }, {
     "id": "chuo",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "中央区"],
     "paint": {
@@ -125,7 +125,7 @@
   }, {
     "id": "minato",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "港区"],
     "paint": {
@@ -135,7 +135,7 @@
   }, {
     "id": "shinjuku",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "新宿区"],
     "paint": {
@@ -145,7 +145,7 @@
   }, {
     "id": "bunkyo",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "文京区"],
     "paint": {
@@ -155,7 +155,7 @@
   }, {
     "id": "taito",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "台東区"],
     "paint": {
@@ -165,7 +165,7 @@
   }, {
     "id": "sumida",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "墨田区"],
     "paint": {
@@ -175,7 +175,7 @@
   }, {
     "id": "koto",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "江東区"],
     "paint": {
@@ -185,7 +185,7 @@
   }, {
     "id": "shinagawa",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "品川区"],
     "paint": {
@@ -195,7 +195,7 @@
   }, {
     "id": "meguro",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "目黒区"],
     "paint": {
@@ -205,7 +205,7 @@
   }, {
     "id": "oota",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "大田区"],
     "paint": {
@@ -215,7 +215,7 @@
   }, {
     "id": "setagaya",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "世田谷区"],
     "paint": {
@@ -225,7 +225,7 @@
   }, {
     "id": "shibuya",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "渋谷区"],
     "paint": {
@@ -235,7 +235,7 @@
   }, {
     "id": "nakano",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "中野区"],
     "paint": {
@@ -245,7 +245,7 @@
   }, {
     "id": "suginami",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "杉並区"],
     "paint": {
@@ -255,7 +255,7 @@
   }, {
     "id": "toshima",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "豊島区"],
     "paint": {
@@ -265,7 +265,7 @@
   }, {
     "id": "kita",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "北区"],
     "paint": {
@@ -275,7 +275,7 @@
   }, {
     "id": "arakawa",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "荒川区"],
     "paint": {
@@ -285,7 +285,7 @@
   }, {
     "id": "itabashi",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "板橋区"],
     "paint": {
@@ -295,7 +295,7 @@
   }, {
     "id": "nerima",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "練馬区"],
     "paint": {
@@ -305,7 +305,7 @@
   }, {
     "id": "adachi",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "足立区"],
     "paint": {
@@ -315,7 +315,7 @@
   }, {
     "id": "katsushika",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "葛飾区"],
     "paint": {
@@ -325,7 +325,7 @@
   }, {
     "id": "edogawa",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_003", "江戸川区"],
     "paint": {
@@ -335,7 +335,7 @@
   }, {
     "id": "syozokumiteichi",
     "type": "fill",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "polygon",
     "filter": ["==", "n03_004", "所属未定地"],
     "paint": {
@@ -349,7 +349,7 @@
   }, {
     "id": "road-rail",
     "type": "line",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "line",
     "minzoom": 11,
     "maxzoom": 14,
@@ -386,7 +386,7 @@
   }, {
     "id": "chiyoda-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "千代田区"],
     "layout": {
@@ -410,7 +410,7 @@
   }, {
     "id": "chuo-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "中央区"],
     "layout": {
@@ -434,7 +434,7 @@
   }, {
     "id": "minato-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "港区"],
     "layout": {
@@ -458,7 +458,7 @@
     }, {
     "id": "shinjuku-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "新宿区"],
     "layout": {
@@ -482,7 +482,7 @@
     }, {
     "id": "bunkyo-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "文京区"],
     "layout": {
@@ -506,7 +506,7 @@
     }, {
     "id": "taito-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "台東区"],
     "layout": {
@@ -530,7 +530,7 @@
     }, {
     "id": "sumida-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "墨田区"],
     "layout": {
@@ -554,7 +554,7 @@
     }, {
     "id": "koto-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "江東区"],
     "layout": {
@@ -578,7 +578,7 @@
     }, {
     "id": "shinagawa-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "品川区"],
     "layout": {
@@ -602,7 +602,7 @@
     }, {
     "id": "meguro-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "目黒区"],
     "layout": {
@@ -626,7 +626,7 @@
     }, {
     "id": "ota-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "大田区"],
     "layout": {
@@ -650,7 +650,7 @@
     }, {
     "id": "setagaya-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "世田谷区"],
     "layout": {
@@ -674,7 +674,7 @@
     }, {
     "id": "shibuya-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "渋谷区"],
     "layout": {
@@ -698,7 +698,7 @@
     }, {
     "id": "nakano-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "中野区"],
     "layout": {
@@ -722,7 +722,7 @@
     }, {
     "id": "suginami-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "杉並区"],
     "layout": {
@@ -746,7 +746,7 @@
     }, {
     "id": "toshima-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "豊島区"],
     "layout": {
@@ -770,7 +770,7 @@
     }, {
     "id": "kita-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "北区"],
     "layout": {
@@ -794,7 +794,7 @@
     }, {
     "id": "arakawa-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "荒川区"],
     "layout": {
@@ -818,7 +818,7 @@
     }, {
     "id": "itabashi-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "板橋区"],
     "layout": {
@@ -842,7 +842,7 @@
     }, {
     "id": "nerima-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "練馬区"],
     "layout": {
@@ -866,7 +866,7 @@
     }, {
     "id": "adachi-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "足立区"],
     "layout": {
@@ -890,7 +890,7 @@
     }, {
     "id": "katsushika-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "葛飾区"],
     "layout": {
@@ -914,7 +914,7 @@
     }, {
     "id": "edogawa-ku",
     "type": "symbol",
-    "source": "mapion",
+    "source": "gsi",
     "source-layer": "point",
     "filter": ["==", "name", "江戸川区"],
     "layout": {
