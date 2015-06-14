@@ -72,6 +72,19 @@
     "@admin_level_3_width": {
       "base": 1,
       "stops": [[4, 0.4], [5, 1], [12, 3]]
+    },
+
+
+    "@rail-lowhigh": {
+      "stops": [[13, "#d8d5c8"], [16, "#b3b1a6"]]
+    },
+    "@rail-width": {
+      "base": 1.5,
+      "stops": [[14, 0.5], [20, 1]]
+    },
+    "@rail-track-width": {
+      "base": 1.5,
+      "stops": [[14, 4], [20, 8]]
     }
   },
   "sources": {
@@ -328,6 +341,46 @@
     "paint": {
       "fill-color": "@five"
     }
+
+
+
+
+
+  }, {
+    "id": "road-rail",
+    "type": "line",
+    "source": "mapion",
+    "source-layer": "line",
+    "minzoom": 11,
+    "maxzoom": 14,
+    "interactive": true,
+    "filter": ["in", "$type", "LineString"],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@rail-lowhigh",
+      "line-width": "@rail-width"
+    }
+  }, {
+    "id": "road-rail-tracks",
+    "ref": "road-rail",
+    "interactive": true,
+    "paint": {
+      "line-color": "@rail-lowhigh",
+      "line-width": "@rail-track-width",
+      "line-dasharray": [0.1, 15],
+      "line-opacity": {
+        "base": 1,
+        "stops": [[13.75, 0], [14, 1]]
+      }
+    }
+
+
+
+
+
 
 
   }, {
