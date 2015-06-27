@@ -1,0 +1,25 @@
+{
+  "attribution": "",
+  "autoscale": true,
+  "bounds": [
+    -180,
+    -85,
+    180,
+    85
+  ],
+  "center": [
+    0,
+    0,
+    3
+  ],
+  "maxzoom": 21,
+  "minzoom": 0,
+  "name": "TileGrid",
+  "private": true,
+  "scheme": "xyz",
+  "tilejson": "2.0.0",
+  "tiles": [
+    "http://chart.apis.google.com/chart?chst=d_text_outline&chs=512x512&chf=bg,s,00000044&chld=FFFFFF%7C32%7Ch%7C000000%7Cb%7C%7C%7C%7C%7C%7C{z}/{x}/{y}%7C%7C%7C%7C%7C%7C%7C%7C____________________________",
+    "http://chart.apis.google.com/chart?chst=d_text_outline&chs=512x512&chf=bg,s,ffffff00&chld=FFFFFF%7C32%7Ch%7C000000%7Cb%7C%7C%7C%7C%7C%7C{z}/{x}/{y}%7C%7C%7C%7C%7C%7C%7C%7C____________________________"
+  ]
+}

@@ -91,6 +91,11 @@
     "gsi": {
       "type": "vector",
       "url": "/styles/source-local.json"
+    },
+    "grid": {
+      "url": "/styles/grid-source.json",
+      "tileSize": 512,
+      "type": "raster"
     }
   },
   "sprite": "/styles/bright",
@@ -936,5 +941,12 @@
     }
 
 
+  },
+  {
+    "id": "grid",
+    "type": "raster",
+    "source": "grid",
+    "minzoom": 0,
+    "maxzoom": 21
   }]
 }
