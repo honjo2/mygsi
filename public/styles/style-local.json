@@ -80,7 +80,7 @@
     },
     "@rail-width": {
       "base": 1.5,
-      "stops": [[14, 0.5], [20, 1]]
+      "stops": [[14, 1.0], [20, 1]]
     },
     "@rail-track-width": {
       "base": 1.5,
