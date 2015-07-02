@@ -90,10 +90,10 @@
   "sources": {
     "gsi": {
       "type": "vector",
-      "url": "/styles/source.json"
+      "url": "https://mygsi.herokuapp.com/styles/source.json"
     }
   },
-  "sprite": "/styles/bright",
+  "sprite": "https://mygsi.herokuapp.com/styles/bright",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
