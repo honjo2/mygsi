@@ -23,6 +23,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     center: [35.7, 139.7],
     zoom: 11,
+    minZoom: 7,
+    maxZoom: 12.8,
     // style: '/styles/style.json', // heroku用
     style: '/styles/style-local.json', // ローカル用
     hash: true
