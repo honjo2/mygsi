@@ -85,6 +85,10 @@
     "@rail-track-width": {
       "base": 1.5,
       "stops": [[14, 4], [20, 8]]
+    },
+    "@station-width": {
+      "base": 3.5,
+      "stops": [[14, 3.0], [20, 3]]
     }
   },
   "sources": {
