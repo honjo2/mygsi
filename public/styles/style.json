@@ -131,6 +131,23 @@
 
   
 
+  }, {
+    "id": "station",
+    "type": "line",
+    "source": "gsi",
+    "source-layer": "line",
+    "minzoom": 8,
+    "maxzoom": 22,
+    "interactive": true,
+    "filter": ["==", "type", "station"],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#dc143c",
+      "line-width": "@station-width"
+    }
 
 
   }, {
@@ -138,10 +155,10 @@
     "type": "line",
     "source": "gsi",
     "source-layer": "line",
-    "minzoom": 11,
+    "minzoom": 7,
     "maxzoom": 22,
     "interactive": true,
-    "filter": ["in", "$type", "LineString"],
+    "filter": ["==", "type", "railroadsection"],
     "layout": {
       "visibility": "visible",
       "line-cap": "butt"
@@ -168,6 +185,29 @@
 
 
 
+  }, {
+    "id": "station-label",
+    "type": "symbol",
+    "source": "gsi",
+    "minzoom": 9,
+    "source-layer": "line",
+    "filter": ["==", "type", "station"],
+    "layout": {
+      "text-font": "@sans_bd",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-max-size": 14,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#a9a9a9",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
+      "text-size": {
+        "base": 1.2,
+        "stops": [[12, 9], [15, 14]]
+      }
+    }
 
 
   }, {
