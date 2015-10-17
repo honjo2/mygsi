@@ -10,8 +10,8 @@
         body { margin: 0; padding: 0; }
         html, body, #map { height: 90%; }
     </style>
-    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.2/mapbox-gl.js'></script> --> <!-- heroku用 -->
-    <script src='js/mapbox-gl-dev-nocache.js'></script> <!-- ローカル用 -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.2/mapbox-gl.js'></script> <!-- heroku用 -->
+    <!-- <script src='js/mapbox-gl-dev-nocache.js'></script> --> <!-- ローカル用 -->
 </head>
 
 <body>
@@ -28,8 +28,8 @@ var map = new mapboxgl.Map({
     zoom: 11,
     minZoom: 7,
     maxZoom: 12.8,
-    // style: '/styles/style.json', // heroku用
-    style: '/styles/style-local.json', // ローカル用
+    style: '/styles/style.json', // heroku用
+    // style: '/styles/style-local.json', // ローカル用
     hash: true
 });
 // console.log(map);
