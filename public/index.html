@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mapbox GL JS debug page</title>
+    <title>ベクタータイルサンプル</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.2/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin: 0; padding: 0; }
-        html, body, #map { height: 100%; }
+        html, body, #map { height: 90%; }
     </style>
+    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.2/mapbox-gl.js'></script> --> <!-- heroku用 -->
+    <script src='js/mapbox-gl-dev-nocache.js'></script> <!-- ローカル用 -->
 </head>
 
 <body>
 <div id='map'></div>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.8.1/mapbox-gl.js'></script> <!-- heroku用 -->
-<!-- <script src='js/mapbox-gl-dev-nocache.js'></script> --> <!-- ローカル用 -->
+国土交通省「国土数値情報（<a href="http://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html">行政区域データ</a>、<a href="http://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N02-v2_2.html">鉄道データ</a>）」をもとに<a href="https://twitter.com/honjo2">honjo2</a>が加工
+<br />
+Since May 11, 2015
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q';
 
@@ -25,8 +28,8 @@ var map = new mapboxgl.Map({
     zoom: 11,
     minZoom: 7,
     maxZoom: 12.8,
-    style: '/styles/style.json', // heroku用
-    // style: '/styles/style-local.json', // ローカル用
+    // style: '/styles/style.json', // heroku用
+    style: '/styles/style-local.json', // ローカル用
     hash: true
 });
 // console.log(map);
