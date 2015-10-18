@@ -25,23 +25,11 @@
   "source-layer": "polygon",
   "filter": ["==", "$type", "Polygon"],
   "paint": {
-    "fill-color": "#a0c8f0"
+    "fill-color": "#a0c8f0",
+    "fill-outline-color": "#66601a"
   }
 
-  }, {
-  "id": "gyouseikai-outer",
-  "type": "line",
-  "source": "gsi",
-  "source-layer": "polygon",
-  "interactive": true,
-  "filter": ["==", "$type", "Polygon"],
-  "layout": {
-    "visibility": "visible"
-  },
-  "paint": {
-    "line-opacity": 1,
-    "line-color": "#66601a"
-  }
+
 
   
 
