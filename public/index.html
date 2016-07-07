@@ -5,12 +5,12 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin: 0; padding: 0; }
         html, body, #map { height: 90%; }
     </style>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.js'></script> <!-- heroku用 -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.js'></script> <!-- heroku用 -->
     <!--<script src='js/mapbox-gl-dev-nocache.js'></script>--> <!-- ローカル用 -->
 </head>
 
@@ -22,7 +22,7 @@ Since May 11, 2015
 <script>
 var map = new mapboxgl.Map({
     container: 'map',
-    center: [35.7, 139.7],
+    center: [139.7, 35.7],
     zoom: 11,
     minZoom: 7,
     maxZoom: 12.8,
