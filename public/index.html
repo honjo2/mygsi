@@ -26,7 +26,155 @@ var map = new mapboxgl.Map({
     zoom: 11,
     minZoom: 7,
     maxZoom: 12.8,
-    style: '/styles/style.json', // heroku用
+    style: {
+  "version": 8,
+  "name": "Bright",
+  "sources": {
+    "gsi": {
+      "type": "vector",
+      "url": "https://mygsi.herokuapp.com/styles/source.json"
+    }
+  },
+  "sprite": "https://mygsi.herokuapp.com/styles/bright",
+  "glyphs": "https://mygsi.herokuapp.com/pbf/glyphs/{fontstack}/{range}.pbf",
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "#f8f4f0"
+    }
+
+
+
+  }, {
+  "id": "gyouseikai-fill",
+  "type": "fill",
+  "source": "gsi",
+  "source-layer": "polygon",
+  "filter": ["==", "$type", "Polygon"],
+  "paint": {
+    "fill-color": "#a0c8f0",
+    "fill-outline-color": "#66601a"
+  }
+
+
+
+
+
+  }, {
+    "id": "station",
+    "type": "line",
+    "source": "gsi",
+    "source-layer": "line",
+    "minzoom": 8,
+    "maxzoom": 22,
+    "interactive": true,
+    "filter": ["==", "type", "station"],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#dc143c",
+      "line-width": {
+        "base": 3.5,
+        "stops": [[14, 3.0], [20, 3]]
+      }
+    }
+
+
+  }, {
+    "id": "road-rail",
+    "type": "line",
+    "source": "gsi",
+    "source-layer": "line",
+    "minzoom": 7,
+    "maxzoom": 22,
+    "interactive": true,
+    "filter": ["==", "type", "railroadsection"],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "stops": [[13, "#d8d5c8"], [16, "#b3b1a6"]]
+      },
+      "line-width": {
+        "base": 1.5,
+        "stops": [[14, 1.0], [20, 1]]
+      }
+    }
+  }, {
+    "id": "road-rail-tracks",
+    "ref": "road-rail",
+    "interactive": true,
+    "paint": {
+      "line-color": {
+        "stops": [[13, "#d8d5c8"], [16, "#b3b1a6"]]
+      },
+      "line-width": {
+        "base": 1.5,
+        "stops": [[14, 4], [20, 8]]
+      },
+      "line-dasharray": [0.1, 15],
+      "line-opacity": {
+        "base": 1,
+        "stops": [[13.75, 0], [14, 1]]
+      }
+    }
+
+
+
+
+
+  }, {
+    "id": "station-label",
+    "type": "symbol",
+    "source": "gsi",
+    "minzoom": 9,
+    "source-layer": "line",
+    "filter": ["==", "type", "station"],
+    "layout": {
+      "text-font": ["semibold"],
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-size": 10,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#a9a9a9",
+      "text-halo-color": "rgba(255,255,255,0.8)",
+      "text-halo-width": 1.2
+    }
+
+
+  }, {
+    "id": "label",
+    "type": "symbol",
+    "source": "gsi",
+    "source-layer": "point",
+    "filter": ["==", "$type", "Point"],
+    "layout": {
+      "text-font": ["semibold"],
+      "text-transform": "uppercase",
+      "text-letter-spacing": 0.1,
+      "text-field": "{name}",
+      "text-size": 11,
+      "text-max-width": 9
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "rgba(255,255,255,0.8)",
+      "text-halo-width": 1.2
+    }
+
+
+
+
+  }]
+}
+, // heroku用
     // style: '/styles/style-local.json', // ローカル用
     hash: true
 });
